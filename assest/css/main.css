@@ -15,7 +15,6 @@ body{
     gap: 8px;
 }
 .logo a{
-   font-weight: 600;
     color:var(--mainColor);
 }
 .logo img{
