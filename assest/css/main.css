@@ -1,61 +1,95 @@
 @import url(./base.css);
-body{
+
+body {
     font-family: var(--mainFont);
 
     background-color: #fff;
 }
-.header{
+
+.header {
     padding: 20px 20px;
     background-color: #eee;
 }
-.header .logo{
-    color:var(--mainColor);
-    display:flex;
+
+.header .logo {
+    color: var(--mainColor);
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 8px;
 }
-.logo a{
-    color:var(--mainColor);
+
+.logo a {
+    color: var(--mainColor);
 }
-.logo img{
+
+.logo img {
     width: 30px;
 
 }
- .nav ul {
+
+.menu {
+    display: none;
+}
+
+.nav ul {
     display: flex;
+    flex-wrap: wrap;
+
     align-items: center;
     gap: 16px;
 
-   
-}
-.nav ul li a{
-    color:#101928
 
-} 
-.active{
+}
+
+.nav ul li a {
+    color: #101928
+}
+
+.active {
     font-weight: 900;
 }
-.auth{
+
+.auth {
     display: flex;
+    flex-wrap: wrap;
+
     align-items: center;
     gap: 16px;
- 
+
 }
-.auth a{
-    font-family: var( --subFont);
+
+.auth a {
+    font-family: var(--subFont);
     padding: 10 0;
-    gap:8px;
-    border-radius:10px ;
+    gap: 8px;
+    border-radius: 10px;
     padding: 5.3px 30.1px;
 }
+
 .auth .login {
-    font-weight:700;
-    color:var(--mainColor);
+    font-weight: 700;
+    color: var(--mainColor);
     border: 2px solid var(--mainColor);
-    
+
 }
-.auth .Register{
-    color:#fff;
+
+.auth .Register {
+    color: #fff;
     background-color: var(--mainColor);
+
+}
+
+/*media header*/
+
+@media screen and (max-width: 992px) {
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        order: 2;
+    }
 
 }
