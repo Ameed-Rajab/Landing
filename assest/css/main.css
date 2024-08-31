@@ -19,11 +19,11 @@ body {
     gap: 8px;
 }
 
-.logo a {
+.header .logo a {
     color: var(--mainColor);
 }
 
-.logo img {
+.header .logo img {
     width: 30px;
 
 }
@@ -83,13 +83,28 @@ body {
 /*media header*/
 
 @media screen and (max-width: 992px) {
-    .nav {
+    .nav,
+    .auth {
         display: none;
     }
 
     .menu {
         display: block;
         order: 2;
+    }
+
+}
+@media screen and (max-width: 576px) {
+    .container {
+        width: calc(100% - 50px);
+    }
+
+    .header .logo img {
+        width: 20px;
+    
+    }
+    .header .logo a{
+        font-size: 14px;
     }
 
 }
