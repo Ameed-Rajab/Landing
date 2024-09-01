@@ -83,6 +83,7 @@ body {
 /*media header*/
 
 @media screen and (max-width: 992px) {
+
     .navbar,
     .auth {
         display: none;
@@ -94,6 +95,7 @@ body {
     }
 
 }
+
 @media screen and (max-width: 576px) {
     .container {
         width: calc(100% - 50px);
@@ -101,14 +103,74 @@ body {
 
     .header .logo img {
         width: 20px;
-    
+
     }
-    .header .logo a{
+
+    .header .logo a {
         font-size: 14px;
     }
 
 }
- 
+
+/*main*/
+
+.testimonials .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+.testimonials .row {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.testimonials1 {
+    padding: 50px 10px;
+    width: 45%;
+    box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);
+
+}
+
+.testimonials h2 {
+    text-align: center;
+}
+
+.data img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.testimonials1 .data {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+
+
+}
+
+.testimonials1 .rating img {
+    width: 15px;
+}
+
+/*media main*/
+@media screen and (max-width: 769px) {
+
+    .testimonials1 {
+        width: 100%;
+    }
+
+
+
+}
+
 /*footer*/
 
 .footer {
@@ -116,27 +178,31 @@ body {
     padding: 50px 0;
     color: #fff;
 }
+
 .footer .logo {
-display: flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 8px;
 }
-.footer .logo img{
+
+.footer .logo img {
     width: 30px;
 }
-.footer a{
+
+.footer a {
     color: #fff;
 }
-.footer .start{
+
+.footer .start {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     flex-direction: column;
-    width:400px;
+    width: 400px;
 }
 
-.footer .end{
+.footer .end {
     display: flex;
     gap: 5px;
     justify-content: space-evenly;
@@ -144,7 +210,8 @@ display: flex;
     flex-wrap: wrap;
 
 }
-.footer .nav{
+
+.footer .nav {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -154,35 +221,34 @@ display: flex;
 }
 
 .footer .icons img {
-    border: 1px solid #fff ;
+    border: 1px solid #fff;
     padding: 10px;
     width: 10px;
     height: 10px;
 }
+
 /*media footer*/
 @media screen and (max-width: 1200px) {
-    .footer .start{
+    .footer .start {
         width: 100%;
     }
 
 }
+
 @media screen and (max-width: 769px) {
-    
+
     .footer-item {
-       width: 33%;
-       margin-bottom: 20px;
+        width: 33%;
+        margin-bottom: 20px;
     }
-   
-   
+
+
 
 }
+
 @media screen and (max-width: 576px) {
-    
+
     .footer-item {
-       width: 100%;
+        width: 100%;
     }
-   
-   
-
 }
-
